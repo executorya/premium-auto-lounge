@@ -1,0 +1,15 @@
+/* Стили для страницы контактов */
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+}

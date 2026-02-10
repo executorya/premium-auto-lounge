@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Premium Auto Lounge</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar is-fixed-top is-dark">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <h1 class="title is-4 has-text-white">PREMIUM AUTO LOUNGE</h1>
+                </a>
+                <a class="navbar-burger" data-target="navbarMenu">
+                    <span></span><span></span><span></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item has-text-white" href="index.html">Главная</a>
+                    <a class="navbar-item active has-text-white" href="contacts.html">Контакты / Отзывы</a>
+                    <a class="navbar-item has-text-white" href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Обертка для контента -->
+    <div class="main-content">
+        <section class="section">
+            <div class="container">
+                <h1 class="title is-2">Контакты / Отзывы</h1>
+                <div class="columns">
+                    <div class="column is-6">
+                        <form id="feedbackForm">
+                            <div class="field">
+                                <label class="label">Имя</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="Ваше имя" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                    <input class="input" type="email" placeholder="example@email.com" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Тема</label>
+                                <div class="control">
+                                    <div class="select is-fullwidth">
+                                        <select required>
+                                            <option value="" disabled selected>Выберите тему</option>
+                                            <option>Предложение</option>
+                                            <option>Жалоба</option>
+                                            <option>Вопрос</option>
+                                            <option>Благодарность</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Сообщение</label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Ваше сообщение..." rows="5" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox">
+                                        <input type="checkbox" required>
+                                        Соглашаюсь на обработку персональных данных
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-primary" type="submit">Отправить отзыв</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="column is-6">
+                        <div class="content">
+                            <h3 class="title is-4">Контакты</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Премиальная, 15</p>
+                            <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                            <p><i class="fas fa-envelope"></i> info@premiumautolounge.ru</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Футер -->
+    <footer class="footer is-dark">
+        <div class="container">
+            <div class="content has-text-centered">
+                <div class="columns">
+                    <div class="column">
+                        <h3 class="title is-4 has-text-white">PREMIUM AUTO LOUNGE</h3>
+                        <p class="has-text-light">
+                            Ведущая платформа для конфигурации и покупки премиальных автомобилей.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h4 class="title is-5 has-text-white">Контакты</h4>
+                        <p class="has-text-light">
+                            <i class="fas fa-phone"></i> +7 (495) 123-45-67<br>
+                            <i class="fas fa-envelope"></i> info@premiumautolounge.ru
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h4 class="title is-5 has-text-white">Социальные сети</h4>
+                        <a class="icon has-text-light" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="icon has-text-light" href="#"><i class="fab fa-telegram"></i></a>
+                        <a class="icon has-text-light" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <p class="has-text-light">© 2024 Premium Auto Lounge</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

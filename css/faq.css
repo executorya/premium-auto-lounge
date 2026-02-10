@@ -1,0 +1,42 @@
+/* Стили для FAQ */
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.faq-question {
+    background-color: #f5f5f5;
+    padding: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #e9ecef;
+}
+
+.faq-answer {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-answer.active {
+    padding: 1.25rem;
+    max-height: 500px;
+}
+
+.faq-question .icon {
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active .icon i {
+    transform: rotate(180deg);
+}

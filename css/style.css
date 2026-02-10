@@ -1,0 +1,32 @@
+/* Делаем чтобы футер всегда был внизу */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1; /* Занимает все доступное пространство */
+}
+
+/* Активный пункт меню */
+.navbar-item.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Темный футер */
+footer.is-dark {
+    background-color: #363636;
+    color: #f5f5f5;
+    margin-top: auto; /* Прижимает футер к низу */
+}
+
+footer.is-dark p,
+footer.is-dark a:not(.button) {
+    color: #f5f5f5;
+}
