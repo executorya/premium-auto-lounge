@@ -13,3 +13,6 @@
 
 ## Используемый фреймворк
 **Bulma**
+
+## Ссылки
+[Публичная страница на GitHub Pages](https://executorya.github.io/premium-auto-lounge/)
